@@ -1,0 +1,38 @@
+.cabecera-img{}
+.pizza{
+    width: 100%;
+    animation: App-logo-spin infinite 20s linear;
+}
+.cabecera-form{
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cabecera-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.bot-log{
+    width: 100px;
+    margin: 10px;
+}
+@media(min-width:800px){
+    .cabecera-form{
+    }
+    .contenedor{
+        display:contents;
+    }
+    .cabecera-login{
+        width: 30%;
+        gap: 60px;     
+    }
+    .cabecera-img{
+        width: 40%;
+    }
+    .form-label{
+        font-size: 30px;
+    }
+}

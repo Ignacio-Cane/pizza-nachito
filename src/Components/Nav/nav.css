@@ -1,0 +1,74 @@
+*{
+    font-family:'Caveat', cursive ;
+    font-size: large;
+}
+:root{
+    --colorbase:rgb(199, 58, 58);
+}
+.Cabecera-header{
+    width: 100%;
+    background-color: var(--colorbase);
+    padding: 2em;
+    color: white;
+}
+.Cabecera-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Cabecera-button{
+    display: none;
+}
+.Cabecera-svg{
+    width: 2em;
+    height: 2em;
+    fill: white;
+}
+.Cabecera-ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.Cabecera-li{
+    margin: 0 1.5em;
+}
+.Cabecera-a{
+    text-decoration: none;
+}
+
+@media(max-width: 480px){
+    .Cabecera-header{
+        padding: 1em;
+
+    }
+    .Cabecera-button{
+        display:flex ;
+        justify-content: flex-end;
+        margin-left: 150px;
+    }
+    .Cabecera-nav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        height: 0vh;
+        opacity: 0;
+        transition: all 2s ease;
+    }
+    .Cabecera-nav.isActive{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 20vh;
+        opacity: 1;
+    }
+    .Cabecera-ul{
+        flex-direction: column;
+        margin: 0;
+    }
+    .Cabecera-li{
+        margin: .5em 0;
+    }
+}

@@ -1,0 +1,13 @@
+.cabecera-foot{
+    width: 100%;
+    background-color: rgb(199, 58, 58);
+    padding: 1em;
+}
+.text-center{
+    color: white;
+    margin:auto;
+}
+span{
+    color: rgb(0, 0, 0);
+}
+.cabecera-div{}

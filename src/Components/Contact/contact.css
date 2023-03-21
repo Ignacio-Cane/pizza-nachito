@@ -1,0 +1,38 @@
+.Cabecera-section{}
+.Cabecera-caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Cabecera-info{  
+    margin-top: 50px;
+}
+.Cabecera-mapa{
+    width: 100%;
+    height: 500px;
+}
+.Cabecera-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.Cabecera-horario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cab-ul{
+    
+}
+.cab-lis{
+    list-style-type: none;
+}
+@media(max-width:480px){
+    .Cabecera-contacto{
+        gap: 150px;
+    }
+}

@@ -1,0 +1,47 @@
+
+.cabecera-pedido{
+    background-image: url(../../../../public/assents/img/pedido.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color: white;
+    padding: 50px 100px 0px 1000px;
+    font-size: 30px;
+    /* Aca se busco que predomine mucho el estilo y quedara si o si del lado negro de la mesa*/
+    display: flex;
+    flex-direction: column;
+    align-items:last baseline;
+    justify-content: start;
+    gap: 30px;
+}
+.cabecera-a{
+    align-self:flex-end ;
+}
+.cabecera-wa{
+    width: 60px;
+}
+
+@media(max-width:780px){
+    .cabecera-pedido{
+        height: 80vh;
+        padding: 10px 10px 0px 500px;   
+    }
+    .cabecera-wa{
+        width: 40px;
+    }
+
+
+}
+@media(max-width:480px){
+    .cabecera-pedido{
+        height: 40vh;
+        padding: 0px 10px 0px 100px; 
+        gap: 0px;  
+    }
+    .cabecera-wa{
+        width: 20px;
+
+    }
+    
+}

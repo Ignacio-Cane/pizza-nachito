@@ -1,0 +1,19 @@
+.cabecera-reg{
+    padding: 20px;
+    width: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.bot-log{
+    width: 100px;
+    margin: 10px;
+}
+@media(min-width:800px){
+    .form-control{
+        width: 400px;
+    }
+}

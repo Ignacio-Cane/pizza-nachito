@@ -1,0 +1,11 @@
+.Cabecera-titulo{
+    font-family: 'Caveat', cursive;
+    font-size: 26px; 
+    padding: 20px;
+    background-color: rgb(199, 58, 58);
+}
+@media(min-width:800px){
+    .Cabecera-titulo{
+        font-size: 40px;
+    }
+}
