@@ -4,6 +4,9 @@ import React,{Fragment} from 'react';
 import Label from '../Log/Label/label';
 import Input from '../Log/Input/input';
 import './check.css';
+import { Link } from 'react-router-dom';
+
+
 const Check = () => {
 
    
@@ -56,7 +59,7 @@ const Check = () => {
                         placeholder:'Confirmar Contraseña',
                         }}
                 />
-                <button type='submit' className='bot-log btn btn-primary'>Login</button>
+                <Link to={'/'} type='submit' className='bot-log btn btn-primary'>Login</Link>
             </div>
         <Footer/>
     </Fragment>

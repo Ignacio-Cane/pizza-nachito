@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './nav.css';
+import { Link } from 'react-router-dom';
 //import Burguerbuttom from './burguerbuttom';
 
 
@@ -23,9 +24,9 @@ const Nav = () => {
       </button>
       <nav className={ `col Cabecera-nav ${ menu ? 'isActive' : '' }` }>
           <ul className='Cabecera-ul'>
-            <li className='Cabecera-li'>Menu</li>
-            <li className='Cabecera-li'>Nosotros</li>
-            <li className='Cabecera-li'>Contacto</li>
+            <Link to={'/Main'} className='Cabecera-li'>Menu</Link>
+            <Link to={'/Contact'}  className='Cabecera-li'>Contacto</Link>
+            <Link to={'/'}  className='Cabecera-li'>Log</Link>
           </ul>
       </nav>
       </div>

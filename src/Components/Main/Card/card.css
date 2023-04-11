@@ -1,0 +1,15 @@
+.a-div{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    border: 2px solid red;
+    max-width: 300px ;
+    margin: auto;
+}
+.a-h3{}
+.a-img{
+    width: 100%;
+}
