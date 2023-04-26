@@ -1,11 +1,12 @@
 import './App.css';
-import Routeo from './Router/router';
+import FormularioAdm from './Components/Product/FormularioAdm';
+//import Routeo from './Router/router';
 
 
 function App() {
   return (
     <div className="App">
-        <Routeo/>
+        <FormularioAdm/>
     </div>
   );
 }

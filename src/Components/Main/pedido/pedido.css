@@ -11,7 +11,7 @@
     /* Aca se busco que predomine mucho el estilo y quedara si o si del lado negro de la mesa*/
     display: flex;
     flex-direction: column;
-    align-items:end;
+    align-items:flex-end;
     justify-content: center;
     gap: 30px;
 }
