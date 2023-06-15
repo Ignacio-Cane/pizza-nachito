@@ -1,33 +1,32 @@
 import React, { useEffect, useState } from 'react'
-import { Product } from '../Product/Product';
+import  Product  from '../Product/Product';
 
 
-const Products = () => {
+export default function Products({modifDato}){
 
     let [datos, setDatos]=useState([]);
 
     const traerInfo=async()=>{
-        await fetch("http://localhost:4000/getProduct")
-                .then((res)=>res.json())
-                .then((data)=>setDatos(data))
-                .catch((err)=>console.log(err))
+       let info= await fetch("http://localhost:4000/productos/allProducts")
+          .then((res)=>res.json())
+          .then((data)=>setDatos(data))
+          .catch((error)=>console.log("HAY UN ERROR !! "+error))
+       return info   
     }
 
     useEffect(()=>{ 
         traerInfo()
 
-        setTimeout(()=>{console.log(datos)},5000)
+        // setTimeout(()=>{console.log(datos)},5000)
     },[])
 
  
   return (
-    <section className= 'row card text-white bg-secondary m-3 align-items-center w-50'>
+    <div className= 'section-cards d-flex justify-content-center flex-wrap '>
         {datos.map((dato)=>{
-            return <Product key={datos.indexOf(dato)} info={dato} />
+            return <Product key={dato.id} info={dato} desplegar={modifDato}/>
         })}
-
-    </section>
+    </div>
   )
 }
 
-export default Products

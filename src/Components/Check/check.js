@@ -36,7 +36,7 @@ const Check = () => {
                 <Input
                     atribute={{
                         id:'name',
-                        name:'Usuario',
+                        name:'nombre_de_usuario',
                         type:'text',
                         placeholder:'Ingrese su Nombre de usuario',
                         }}

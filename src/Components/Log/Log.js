@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Log = () => {
 
     const [datos, setDatos] = useState({
-        usuario:'',
+        nombre_de_usuario:'',
         contraseña:''
     });
 
@@ -32,7 +32,7 @@ const Log = () => {
                 <Input
                     atribute={{
                         id:'name',
-                        name:'usuario',
+                        name:'nombre_de_usuario',
                         type:'text',
                         placeholder:'Ingrese su nombre de usuario',
                         }}
