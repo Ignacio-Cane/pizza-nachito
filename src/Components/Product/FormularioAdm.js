@@ -9,12 +9,14 @@ const FormularioAdm = () => {
   const[formOculto,setFormOculto] =useState(true);
   
 
+
   return (
     <main className="mt-5 d-flex flex-column align-items-center">
       <h2>Sitio de Administrador</h2>
       <div className="d-grid gap-2 col-6 mx-auto">
         <button className="btn btn-warning" type="button" onClick={()=>{setOcultarProducto(false);setFormOculto(true)}}>Mostrar Producto</button>
         <button className="btn btn-warning" type="button" onClick={()=>{setFormOculto(false);setOcultarProducto(true)}}>Cargar Producto</button>
+        <a href='/'>Login</a>
       </div>
 
       {formOculto === false? 

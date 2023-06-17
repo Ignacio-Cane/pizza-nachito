@@ -1,15 +1,16 @@
-.a-div{
+.a-sec{
     display: flex ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 0px;
 
+    height: 400px;
     border: 2px solid red;
     max-width: 300px ;
     margin: auto;
 }
-.a-h3{}
 .a-img{
+    background-size: cover ;
     width: 100%;
 }

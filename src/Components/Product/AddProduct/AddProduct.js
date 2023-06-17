@@ -82,14 +82,14 @@ export default function CargarProducto(){
   return (
     <Fragment>
       { mensajeOculto === true?
-        <form className=" w-75 mb-5" onSubmit={(event)=>{addProduct(event)}}>
+        <form className="d-flex flex-column align-items-center justify-content-center gap-3  m-2 p-3 bg-warning w-75" onSubmit={(event)=>{addProduct(event)}}>
           <label  htmlFor='nombre' className="form-label">INGRESE EL NOMBRE DEL PRODUCTO</label>
           <input  type='text' className="form-control" id='nombre' name='nombre'value={form.nombre} onChange={(event)=>handleChange(event)} ></input>
         
           <label htmlFor='precio' className="form-label">INGRESE EL PRECIO DEL PRODUCTO</label>
           <input type="number" id='precio' name='precio' className="form-control" min="100" value={form.precio} onChange={(event)=>handleChange(event)}></input>
 
-          <input type="file" id='imagen' name='imagen' placeholder={form.imagen} onChange={(event)=>handleChangeInput(event)} /> 
+          <input type="file" id='imagen' name='imagen' className="form-control" placeholder={form.imagen} onChange={(event)=>handleChangeInput(event)} /> 
 
           <button type="submit"  className='btn btn-primary w-25'>Agregar</button>
         </form>

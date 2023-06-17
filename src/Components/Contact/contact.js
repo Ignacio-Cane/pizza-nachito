@@ -18,7 +18,7 @@ const Contact = () => {
                 </div>
                 <div className='col Cabecera-contacto'>
                     <h3>Contacto</h3>
-                    <a className='btn btn-primary' href=''>LLAMAR AHORA</a>
+                    <a className='btn btn-primary' href='https://wa.me/3537668071'>LLAMAR AHORA</a>
                     <p>0351-15635129</p>
                 </div>
                 <div className='col Cabecera-horario'>

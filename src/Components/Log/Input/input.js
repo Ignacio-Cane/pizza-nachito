@@ -7,6 +7,7 @@ const Input = ({atribute,handleChange}) => {
     name={atribute.name}
     placeholder={atribute.placeholder}
     type={atribute.type}
+    value={atribute.value}
     onChange={(e)=> handleChange(e.target.name, e.target.value)}
     className='form-control'
     />
