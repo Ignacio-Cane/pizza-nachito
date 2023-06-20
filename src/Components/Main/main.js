@@ -9,7 +9,7 @@ const Main = () => {
   let [datos, setDatos]=useState([]);
 
   const traerInfo=async()=>{
-    let infor= await fetch("http://localhost:4000/productos/allProducts")
+    let infor= await fetch("https://api-proyecto-a0km.onrender.com/productos/allProducts")
        .then((res)=>res.json())
        .then((data)=>setDatos(data))
        .catch((error)=>console.log("HAY UN ERROR !! "+error))

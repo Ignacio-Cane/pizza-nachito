@@ -46,7 +46,7 @@ export default function CargarProducto(){
             console.log(form.id)
         }
         
-            const response= await fetch(`http://localhost:4000/productos/addProducts/${idProd}`,{
+            const response= await fetch(`https://api-proyecto-a0km.onrender.com/productos/addProducts/${idProd}`,{
             method:metodo,
             headers:infoHeaders,
             body:formData

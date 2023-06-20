@@ -32,7 +32,7 @@ const Check = () => {
             "contraseña": event.target[1].value
         });
 
-        const response=await fetch('http://localhost:4000/usuario/check', {
+        const response=await fetch('https://api-proyecto-a0km.onrender.com/usuario/check', {
                 method:'POST',
                 body: formData ,
                 headers:{

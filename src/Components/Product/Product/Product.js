@@ -10,7 +10,7 @@ export default function Product ({info,desplegar}){
 
   const eliminarProd=async()=>{
 
-    await fetch("http://localhost:4000/productos/deleteProducts",{
+    await fetch("https://api-proyecto-a0km.onrender.com/productos/deleteProducts",{
       method:"DELETE",
       headers:{
           'Content-Type': 'application/json'

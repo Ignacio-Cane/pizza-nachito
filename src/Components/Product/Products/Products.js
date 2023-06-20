@@ -7,7 +7,7 @@ export default function Products({modifDato}){
     let [datos, setDatos]=useState([]);
 
     const traerInfo=async()=>{
-       let info= await fetch("http://localhost:4000/productos/allProducts")
+       let info= await fetch("https://api-proyecto-a0km.onrender.com/productos/allProducts")
           .then((res)=>res.json())
           .then((data)=>setDatos(data))
           .catch((error)=>console.log("HAY UN ERROR !! "+error))

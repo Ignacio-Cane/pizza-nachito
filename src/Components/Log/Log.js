@@ -7,6 +7,8 @@ import { Link,useNavigate } from 'react-router-dom';
 
 const Log = () => {
     const navigate= useNavigate();
+    //ACA LO COMENTADO ES PORQUE QUISE GENERAR UN ESTADO COMBINADO CON UN HANDLECHANGE PARA QUE CAMBIE EL VALOR  CONSTANTEMENTE PERO NO LO PUDE RESOLVER, SEGURAMENTE TENGA ALGUN ERROR EN ALGO DEL CODIGO;
+
     // const [datos, setDatos] = useState({
     //     usuario:'',
     //     contraseña:''
@@ -18,6 +20,8 @@ const Log = () => {
     //         [event.target.name] : event.target.value
     //     }) 
     // };
+    //value={form.usuario} onChange={(event)=>handleChange(event)} ESTO ES LO QUE LE PASABA EN EL INPUT;
+    //let form= JSON.stringify(datos) DESPUES LE PASABA LA VARIABLE EN JSON DEL ESTADO;
 
     const verifUsuario=async(event)=>{
         event.preventDefault();
@@ -25,20 +29,28 @@ const Log = () => {
             "usuario": event.target[0].value,
             "contraseña": event.target[1].value
         })
-         await fetch('http://localhost:4000/usuario/login',{
+         await fetch('https://api-proyecto-a0km.onrender.com/usuario/login',{
         method: 'POST',
         body:form,
         headers:{
             'Content-Type': 'application/json'
         }})
         .then(res =>{
-            console.log(res.data)
-            navigate('/Main')
+            console.log(res.status)
+            if(res.status === 204){
+                alert('Usuario incorrecta')
+            }else{
+                if(res.status === 401){
+                    alert('Contraseña incorrecta')
+                }else{
+                 navigate('/Main')   
+                } 
+            }
         })
         .catch(error=>{
-            alert('service error')
-            console.log(error)
+            alert('Problemas con el servidor')
         })
+
     }
     
   return (
